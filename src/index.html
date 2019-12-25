@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Adaptive menu</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="/css/style.min.css">
+    </head>
+    <body>
+        <div class="sprite">
+            <include src="dist/img/sprite.svg"></include>
+        </div>
+        <nav class="nav">
+            <ul class="nav__menu">
+                <li class="nav__menu-item nav__menu-item--disabled">
+                    <svg class="nav__menu-icon" width="40" height="31.3">
+                        <use xlink:href="#icon-container"></use>
+                    </svg>
+                    <p class="nav__menu-item-name">Flat Rack контейнеры</p>
+                </li>
+                <li class="nav__menu-item">
+                    <svg class="nav__menu-icon" width="40" height="31.3">
+                        <use xlink:href="#icon-container"></use>
+                    </svg>
+                    <p class="nav__menu-item-name">Опен топ контейнеры</p>
+                </li>
+                <li class="nav__menu-item nav__menu-item--active">
+                    <svg class="nav__menu-icon" width="40" height="31.3">
+                        <use xlink:href="#icon-container"></use>
+                    </svg>
+                    <p class="nav__menu-item-name">Танк-контейнеры</p>
+                    <div class="nav__submenu-container">
+                        <ul class="nav__submenu-list">
+                            <li class="nav__submenu-item nav__submenu-item--food">
+                                <svg class="nav__submenu-icon" width="33" height="33">
+                                    <use xlink:href="#icon-lemonade"></use>
+                                </svg>
+                                <p class="nav__submenu-item-name">Перевозка пищевых грузов</p>
+                                <svg class="nav__submenu-arrow" width="13" height="7">
+                                    <use xlink:href="#icon-arrow"></use>
+                                </svg>
+                            </li>
+                            <li class="nav__submenu-item">
+                                <svg class="nav__submenu-icon" width="33" height="33">
+                                    <use xlink:href="#icon-gas"></use>
+                                </svg>
+                                <p class="nav__submenu-item-name">Перевозка сжиженных газов</p>
+                                <svg class="nav__submenu-arrow" width="13" height="7">
+                                    <use xlink:href="#icon-arrow"></use>
+                                </svg>
+                            </li>
+                            <li class="nav__submenu-item nav__submenu-item--flask">
+                                <svg class="nav__submenu-icon" width="33" height="33">
+                                    <use xlink:href="#icon-flask"></use>
+                                </svg>
+                                <p class="nav__submenu-item-name">Перевозка химических грузов</p>
+                                <svg class="nav__submenu-arrow" width="13" height="7">
+                                    <use xlink:href="#icon-arrow"></use>
+                                </svg>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav__menu-item nav__menu-item--disabled">
+                    <svg class="nav__menu-icon" width="40" height="31.3">
+                        <use xlink:href="#icon-container"></use>
+                    </svg>
+                    <p class="nav__menu-item-name">Термо-контейнер</p>
+                </li>
+                <li class="nav__menu-item nav__menu-item--disabled">
+                    <svg class="nav__menu-icon" width="40" height="31.3">
+                        <use xlink:href="#icon-container"></use>
+                    </svg>
+                    <p class="nav__menu-item-name">Универсальный контейнер</p>
+                </li>
+            </ul>
+            <div class="nav__menu-view-more nav__menu-view-more--hidden">
+                <svg class="nav__menu-icon" width="35" height="7">
+                    <use xlink:href="#icon-points"></use>
+                </svg>
+                <ul class="nav__view-more-list">
+                </ul>
+            </div>
+            <div class="nav__container">
+            </div>
+        </nav>
+
+        <div class="nav__submenu-lv-2-container nav__submenu-lv-2-container--food">
+            <ul class="nav__submenu-list-lv-2">
+                <li class="nav__submenu-item-lv-2">
+                    <a href="#" class="nav__submenu-link">Спирты пищевые</a>
+                </li>
+                <li class="nav__submenu-item-lv-2">
+                    <a href="#" class="nav__submenu-link">Масла</a>
+                </li>
+                <li class="nav__submenu-item-lv-2">
+                    <a href="#" class="nav__submenu-link">Соки</a>
+                </li>
+                <li class="nav__submenu-item-lv-2">
+                    <a href="#" class="nav__submenu-link">Концентраты соков</a>
+                </li>
+                <li class="nav__submenu-item-lv-2">
+                    <a href="#" class="nav__submenu-link">Пищевые добавки</a>
+                </li>
+                <li class="nav__submenu-item-lv-2">
+                    <a href="#" class="nav__submenu-link">Патока</a>
+                </li>
+                <li class="nav__submenu-item-lv-2">
+                    <a href="#" class="nav__submenu-link">Виноматериал</a>
+                </li>
+                <li class="nav__submenu-item-lv-2">
+                    <a href="#" class="nav__submenu-link">Прочее</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav__submenu-lv-2-container nav__submenu-lv-2-container--flask">
+            <ul class="nav__submenu-list-lv-2">
+                <li class="nav__submenu-item-lv-2 nav__submenu-item-lv-2--acid">
+                    <p class="nav__submenu-list-lv3-name">Кислоты</p>
+                    <svg class="nav__submenu-lv-2-arrow" width="5" height="10">
+                        <use xlink:href="#icon-horizontal-arrow"></use>
+                    </svg>
+                </li>
+                <li class="nav__submenu-item-lv-2">
+                    <p class="nav__submenu-list-lv3-name">Щелочи</p>
+                    <svg class="nav__submenu-lv-2-arrow" width="5" height="10">
+                        <use xlink:href="#icon-horizontal-arrow"></use>
+                    </svg>
+                </li>
+                <li class="nav__submenu-item-lv-2">
+                    <p class="nav__submenu-list-lv3-name">Спирты</p>
+                    <svg class="nav__submenu-lv-2-arrow" width="5" height="10">
+                        <use xlink:href="#icon-horizontal-arrow"></use>
+                    </svg>
+                </li>
+                <li class="nav__submenu-item-lv-2">
+                    <p class="nav__submenu-list-lv3-name">Растворители</p>
+                    <svg class="nav__submenu-lv-2-arrow" width="5" height="10">
+                        <use xlink:href="#icon-horizontal-arrow"></use>
+                    </svg>
+                </li>
+                <li class="nav__submenu-item-lv-2">
+                    <p class="nav__submenu-list-lv3-name">Соли</p>
+                    <svg class="nav__submenu-lv-2-arrow" width="5" height="10">
+                        <use xlink:href="#icon-horizontal-arrow"></use>
+                    </svg>
+                </li>
+                <li class="nav__submenu-item-lv-2">
+                    <p class="nav__submenu-list-lv3-name">Эфиры</p>
+                    <svg class="nav__submenu-lv-2-arrow" width="5" height="10">
+                        <use xlink:href="#icon-horizontal-arrow"></use>
+                    </svg>
+                </li>
+                <li class="nav__submenu-item-lv-2">
+                    <p class="nav__submenu-list-lv3-name">Хлориды</p>
+                    <svg class="nav__submenu-lv-2-arrow" width="5" height="10">
+                        <use xlink:href="#icon-horizontal-arrow"></use>
+                    </svg>
+                </li>
+                <li class="nav__submenu-item-lv-2">
+                    <p class="nav__submenu-list-lv3-name">Прочее</p>
+                    <svg class="nav__submenu-lv-2-arrow" width="5" height="10">
+                        <use xlink:href="#icon-horizontal-arrow"></use>
+                    </svg>
+                </li>
+            </ul>
+            <ul class="nav__submenu-list-lv-3 nav__submenu-list-lv-3--acid">
+                <li class="nav__submenu-item-lv-3">
+                    <a href="#" class="nav__submenu-link-lv-3">Фенол расплавленный</a>
+                </li>
+                <li class="nav__submenu-item-lv-3">
+                    <a href="#" class="nav__submenu-link-lv-3">Олеум</a>
+                </li>
+                <li class="nav__submenu-item-lv-3">
+                    <a href="#" class="nav__submenu-link-lv-3">Хлорная кислота</a>
+                </li>
+                <li class="nav__submenu-item-lv-3">
+                    <a href="#" class="nav__submenu-link-lv-3">Нитрилакриловая кислота</a>
+                </li>
+                <li class="nav__submenu-item-lv-3">
+                    <a href="#" class="nav__submenu-link-lv-3">Серная кислота</a>
+                </li>
+                <li class="nav__submenu-item-lv-3">
+                    <a href="#" class="nav__submenu-link-lv-3">Азотная кислота</a>
+                </li>
+                <li class="nav__submenu-item-lv-3">
+                    <a href="#" class="nav__submenu-link-lv-3">Ортофосфорная кислота</a>
+                </li>
+            </ul>
+        </div>
+    </body>
+
+    <script src="js/script.min.js"></script>
+</html>
